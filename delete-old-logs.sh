@@ -19,3 +19,6 @@ then
 else
      echo -e "$r please provide the correct path $n"
 fi
+
+file=$(find $source_directory -name "*.log" -mtime +10)
+echo -e "$g $files"
