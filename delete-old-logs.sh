@@ -24,5 +24,6 @@ file=$(find $source_directory -name "*.log" -mtime +10)
 
 while IFS= read -r line
 do 
-echo -e "$g $line"
+echo -e "$g deleting old log file $r $line $n"
+rm -rf $line
 done <<< $file
