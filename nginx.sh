@@ -23,7 +23,7 @@ fi
 # }
 
 
-dnf install nginx -y
+dnf install nginxx -y
 #validate $? "installing nginx"
 
 systemctl enable nginx
