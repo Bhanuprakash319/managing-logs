@@ -1,4 +1,8 @@
 #!/bin/bash
+r="\e[31m"
+g="\e[32m"
+n="\e[0m"
+
 set -e
 failure(){
     echo -e "$r failed at line $1 : $2 $n"
