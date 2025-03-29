@@ -6,10 +6,6 @@ failure(){
 }
 trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
-r="\e[31m"
-g="\e[32m"
-n="\e[0m"
-
 source_directory=/tmp/logs
 
 r="/e[31m"
@@ -18,7 +14,7 @@ n="/e[0m"
 
 if [ -d $source_directory ]
 then 
-     echo -e "$gdirectory exists$n"
+     echo -e "$g directory exists$n"
 else
      echo -e "$r please provide the correct path $n"
 fi
