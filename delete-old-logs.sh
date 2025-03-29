@@ -8,7 +8,7 @@ trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 source_directory=/tmp/logs
 
-="\e[31m"
+r="\e[31m"
 g="\e[32m"
 n="\e[0m"
 
