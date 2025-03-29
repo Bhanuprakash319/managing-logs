@@ -21,4 +21,8 @@ else
 fi
 
 file=$(find $source_directory -name "*.log" -mtime +10)
-echo -e "$g $files"
+
+while IFS = read -r line
+do 
+echo -e "$g $line"
+done >>> $files
