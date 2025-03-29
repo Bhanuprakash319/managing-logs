@@ -22,7 +22,7 @@ fi
 
 file=$(find $source_directory -name "*.log" -mtime +10)
 
-while IFS = read -r line
+while IFS= read -r line
 do 
 echo -e "$g $line"
 done <<< $files
