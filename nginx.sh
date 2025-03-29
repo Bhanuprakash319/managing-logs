@@ -7,7 +7,7 @@ failure()
 {
     echo -e "$r Failed at line $1 : $2 $n"
 }
-trap 'failure ${lineno} "$BASH_COMMAND"' ERR
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 userid=$(id -u)
 if [ $userid -eq 0 ]
