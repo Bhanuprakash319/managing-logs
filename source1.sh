@@ -7,5 +7,5 @@ n="\e[0m"
 
 a="bhanu"
 echo -e "Process id of source1 is$g $$ $n"
-./source2.sh
+source ./source2.sh
 echo -e "Hi i am $g $a$n"
