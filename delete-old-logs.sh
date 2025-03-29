@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
-failure()
-{
+failure(){
     echo -e "$r failed at line $1 : $2 $n"
 }
 
