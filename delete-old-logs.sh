@@ -4,7 +4,7 @@ failure(){
     echo -e "$r failed at line $1 : $2 $n"
 }
 
-trap 'failure ${LINENO} "$BASH_COMMAND"'ERR
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 source_directory=/tmp/logs
 
